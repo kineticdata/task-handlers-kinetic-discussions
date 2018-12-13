@@ -67,7 +67,7 @@ class KineticDiscussionsDiscussionRetrieveV1
     return <<-RESULTS
     <results>
 	    <result name="Handler Error Message">#{escape(error_message)}</result>
-        <result name="Discussion">#{result.nil? ? '' : result.body}</result>
+        <result name="Discussion">#{result.nil? ? '' : escape(result.body)}</result>
     </results>
     RESULTS
   end

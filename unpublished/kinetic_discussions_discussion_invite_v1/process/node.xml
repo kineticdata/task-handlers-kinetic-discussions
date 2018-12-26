@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <taskDefinition id="kinetic_discussions_discussion_invite" name="Kinetic Discussions Discussion Invite" schema_version="1.0" version="1">
   <author>support@kineticdata.com</author>
-  <description>This handler closes a specific Kinetic Discussions discussion.</description>
+  <description>This handler invites a user to a specific Kinetic Discussions discussion.</description>
   <helpurl>http://ktc.kineticdata.com/handler/kinetic_discussions_discussion_invite/1</helpurl>
   <visible>true</visible>
   <deferrable>false</deferrable>

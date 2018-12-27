@@ -14,7 +14,7 @@
     <parameter id="space_slug" label="Space Slug" required="false"
                tooltip="The CE space of the discussion you are trying to close. Optional. Defaults to handler info property."/>
     <parameter id="message" label="Message" required="true" 
-               tooltip="The message to be add, in JSON format. e.g. [{&quote;type&quot;:&quot;text&quot;,&quot;value&quot;:&quot;Johnny Five, still alive!&quot;}]"/>
+               tooltip="The message to be add, in JSON format. e.g. [{&quot;type&quot;:&quot;text&quot;,&quot;value&quot;:&quot;Johnny Five, still alive!&quot;}]"/>
   </parameters>
   <handler name="kinetic_discussions_message_create" version="1">
     <infos>

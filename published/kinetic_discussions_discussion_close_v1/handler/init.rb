@@ -54,7 +54,7 @@ class KineticDiscussionsDiscussionCloseV1
     result = resource.put({"isArchived" => true}.to_json, { accept: :json, content_type: :json, authorization: "Bearer #{auth_token}" })
 	  
     rescue RestClient::Exception => error
-      error_message = "#{error.http_code}: #{JSON.parse(error.response)["error"]}"
+      error_message = "#{error.http_code}: #{error.response}"
       raise error_message if error_handling == "Raise Error"
     rescue Exception => error
       error_message = error.inspect

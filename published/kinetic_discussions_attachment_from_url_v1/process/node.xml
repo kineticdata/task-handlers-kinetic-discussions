@@ -7,7 +7,7 @@
   <deferrable>false</deferrable>
   <parameters>
     <parameter id="error_handling" label="Error Handling" required="true" tooltip="Determine what to return if an error is encountered." menu="Error Message,Raise Error">Error Message</parameter>
-    <parameter id="path" label="Path" required="true" tooltip="Example: /discussions/:discussionId/messages/:messageId"></parameter>
+    <parameter id="path" label="Path" required="true" tooltip="Example: /discussions/:discussionId/messages"></parameter>
     <parameter id="filename" label="Filename" required="true" tooltip="The name of the attachment file."/>
     <parameter id="url" label="URL" required="true" tooltip="The URL to download (typically will be a URL to a file)."/>
   </parameters>

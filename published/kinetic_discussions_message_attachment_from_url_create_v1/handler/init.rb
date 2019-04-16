@@ -2,7 +2,7 @@
 require File.expand_path(File.join(File.dirname(__FILE__), "dependencies"))
 require 'uri'
 
-class KineticDiscussionsAttachmentFromUrlV1
+class KineticDiscussionsMessageAttachmentFromUrlCreateV1
   # ==== Parameters
   # * +input+ - The String of Xml that was built by evaluating the node.xml handler template.
   def initialize(input)
@@ -112,16 +112,16 @@ class KineticDiscussionsAttachmentFromUrlV1
       message = {"content" => []}
       string_body = org.apache.http.entity.mime.content.StringBody.new(message.to_json)
       reqEntity.addPart("message", string_body)
-      
+
       file_bytes = ByteArrayBody.new(file_dl_response.body.to_java_bytes,file_content_type, @filename)
       reqEntity.addPart("attachments", file_bytes)
       httppost.setEntity(reqEntity)
 
       puts "Uploading attachment to a discussion message: #{httppost.getURI}" if @debug_logging_enabled
       response = http_client.execute(httppost)
-      
+
       entity = response.getEntity
-      utf8 = 
+      utf8 =
       resp = EntityUtils.toString(entity)
 
       if response.getStatusLine.getStatusCode == 200

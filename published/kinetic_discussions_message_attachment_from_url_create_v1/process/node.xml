@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<taskDefinition id="kinetic_discussions_attachment_from_url" name="Kinetic Discussions Attachment From URL v1" schema_version="1.0" version="1">
+<taskDefinition id="kinetic_discussions_message_attachment_from_url_create" name="Kinetic Discussions Attachment From Url Create" schema_version="1.0" version="1">
   <author>support@kineticdata.com</author>
   <description>A handler to create a discussion message with an attachment.</description>
   <helpurl></helpurl>
@@ -12,7 +12,7 @@
     <parameter id="url" label="URL" required="true" tooltip="The URL to download (typically will be a URL to a file)."/>
   </parameters>
 
-  <handler name="kinetic_discussions_attachment_from_url" version="1">
+  <handler name="kinetic_discussions_message_attachment_from_url_create" version="1">
     <infos>
       <info name="api_username">&lt;%= @info['api_username'] %&gt;</info>
       <info name="api_password">&lt;%= @info['api_password'] %&gt;</info>
